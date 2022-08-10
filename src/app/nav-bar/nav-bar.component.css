@@ -1,0 +1,22 @@
+.navButtons {    
+    padding: 20px;
+    float: right;    
+}
+
+.navBrand {    
+    padding-left: 50px;
+    float: left;
+}
+
+.navbar {
+    width: 100%;
+    background-color:grey;
+    align-content: center;
+    overflow: hidden;     
+}
+
+.mat-button {
+    font-size: 24px;
+    margin-right:10px;
+    text-align: center; 
+}
