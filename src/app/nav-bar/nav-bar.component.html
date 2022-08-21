@@ -5,9 +5,12 @@
 
 
     <div class="navButtons">
-        <button mat-button >Home</button>
-        <button mat-button (click)="login()">Login</button>
+        <button mat-button [routerLink]="['']">Home</button>
+        <button mat-button *ngIf="this.discordAuthService.token" [routerLink]="['profile']">Profile</button>
+        <button mat-button *ngIf="!this.discordAuthService.token" (click)="login()">Login</button>
         <button mat-button >Events</button>
         <button mat-button >Sales</button>
     </div>
 </div>
+
+

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DiscordAuthService } from '../Shared/discord-auth.service';
 
 
 @Component({
@@ -9,13 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public discordAuthService: DiscordAuthService) { }
 
   ngOnInit(): void {
+
   }
 
   login() {
-    console.log("Login Clicked")
+    this.discordAuthService.login();        
   }
-
 }
